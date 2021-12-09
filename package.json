@@ -1,9 +1,9 @@
 {
-	"name": "optimizedhtml",
-	"version": "5.0.0",
-	"description": "OptimizedHTML 5 - Lightweight Gulp Starter",
+	"name": "dental-meeting",
+	"version": "1.0.0",
+	"description": "69-th European Dental Student's Association Meeting",
 	"main": "index.js",
-	"author": "WebDesign Master",
+	"author": "FunTomas11 <krainievlc@gmail.com>",
 	"type": "module",
 	"browserslist": [
 		"last 10 versions"
