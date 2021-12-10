@@ -4,3 +4,4 @@
 /app/images/dist/
 /app/css/
 /app/**/*.min.js
+/package-lock.json
