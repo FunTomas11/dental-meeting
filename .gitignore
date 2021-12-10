@@ -2,3 +2,5 @@
 /node_modules/
 /.idea/
 /app/images/dist/
+/css/
+/js/app.min.js
