@@ -9,10 +9,19 @@
 .schedule_info
   background ghostwhite
   padding 10px
+  font-size 20px
+  letter-spacing 1px
   margin-right 150px
   margin-left 50px
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
 
+.schedule_title
+  font-size 50px
+  font-weight bold
+  text-transform: uppercase;
+  width 100%
+  display block
+  margin-bottom 20px
 .meeting_venues
   display block
   background ghostwhite
@@ -23,7 +32,7 @@
 .meeting_venues_title
   font-size 35px
   margin-left 15px
-  font-family Teko, sans-serif
+  font-family userfont
 
 .img
   margin 5px
@@ -31,7 +40,9 @@
 
 .img_link
   display grid
-  justify-items center
+  text-align center
+  font-family userfont
+  font-size 35px
   margin-left 15px
   margin-right 15px
 
@@ -43,24 +54,36 @@
   display flex
 
 .workshop
-  margin-left 80px
+  margin-left 20%
   margin-top 45px
-  background #0d6efd
-  max-width 700px
-  width 100%
-  font-family accent-font
-  min-height 100px
+  background ghostwhite
+  font-family userfont
+  font-size 80px
+  letter-spacing 25px
+  text-align center
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
 
+.workshop_text
+  padding-left 25px
+
+.workshop_row :hover
+  background lightgray
 
 .social_program_div
   display flex
-  background darkgrey
-  justify-items right
-  align-items right
+
 .social_program
-  margin-left 80px
+  margin-left auto
+  margin-right 20%
   margin-top 45px
-  background #0d6efd
-  max-width 700px
-  width 100%
-  min-height 100px
+  font-family userfont
+  font-size 80px
+  text-align center
+  letter-spacing 12px
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+
+.social_program_text
+  padding-left 10px
+
+.social_program_div :hover
+  background lightgrey
