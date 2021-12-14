@@ -5,6 +5,8 @@
 .row1
   display flex
   position: relative;
+  margin-left 50px
+  margin-right 50px
 
   &:before
     position: absolute;
@@ -92,11 +94,11 @@
 
 .ptss_border
   max-height: 202px;
-  max-width: 260px;
+  max-width: 293px;
   position: absolute;
-  right: -8rem;
+  right: -5rem;
   bottom: -2rem;
-  transform: rotate(-33deg);
+  transform: rotate(-27deg);
   z-index: 10;
 
 .lublin_title
@@ -127,10 +129,11 @@
 
 .registration_packages
   text-align center
-  width 40%
-  border-bottom 1px solid #525252
-  padding-bottom 10px
+  width 80%
   color #1e3b00
+  display flex
+  flex-direction column
+  align-items center
 
 .package_title
   font-weight bold
@@ -146,7 +149,7 @@
   background #F8F8F8
   margin-left 50px
   margin-right 50px
-  margin-top 35px
+  margin-top 20px
   margin-bottom 50px
   padding 50px
   font-size 20px
@@ -160,7 +163,29 @@
   font-size 50px
   color #1e3b00
 
+.refund
+  background #F8F8F8
+  min-width 400px
+  min-height 50px
+  padding 15px
+  font-family userfont
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  margin 50px
+  font-size 20px
+  &__row
+    display flex
+    align-items center
+    justify-content center
+    flex 1 1 auto
+  &:hover
+    background #D9AE51
+    box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
 
+.line
+  height 2px !important
+  width 80%
+  color #525252
+  margin-bottom 70px
 
 
 .content
