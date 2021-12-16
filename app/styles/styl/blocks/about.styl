@@ -156,6 +156,21 @@
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
   font-family userfont
   text-align center
+  position: relative;
+
+.package_b_border
+  max-height: 600px;
+  position: absolute
+  right -120px
+  top -50px
+  z-index: 10;
+
+.package_a_border
+  max-height: 600px;
+  position: absolute
+  right 280px
+  top 242px
+  z-index: 10;
 
 .price
   font-family userfont
@@ -164,7 +179,8 @@
   color #1e3b00
 
 .refund
-  background #F8F8F8
+  background button-color
+  border-radius 10px
   min-width 400px
   min-height 50px
   padding 15px
@@ -178,7 +194,6 @@
     justify-content center
     flex 1 1 auto
   &:hover
-    background #D9AE51
     box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
 
 .line
@@ -192,6 +207,7 @@
   display flex
   width: 100%
   justify-content center
+  position: relative
 
 
 
