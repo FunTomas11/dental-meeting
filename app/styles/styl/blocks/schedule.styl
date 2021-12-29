@@ -4,6 +4,9 @@
 
 .schedule_info_meeting
   display flex
+  
+  @media screen and (max-width 600px)
+    flex-wrap wrap
 
 .schedule_info
   background #F8F8F8
@@ -16,6 +19,8 @@
   margin-left 50px
   color #525252
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  @media screen and (max-width 600px)
+    margin-right 50px
 
 .schedule_title
   font-size 50px
@@ -59,7 +64,8 @@
 
 .meeting_venues_hotel
   display flex
-  wrap-option flex
+  @media screen and (max-width 600px)
+    flex-wrap wrap
 
 .workshop_row
   display flex
@@ -75,6 +81,8 @@
   text-align center
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
   border-radius 10px
+  @media screen and (max-width: 600px)
+    margin-left 0
 
 .workshop_text
   padding-left 25px
@@ -99,6 +107,8 @@
   letter-spacing 13px
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
   border-radius 10px
+  @media screen and (max-width: 600px)
+    margin-right 0
 
 .social_program_text
   padding-left 10px

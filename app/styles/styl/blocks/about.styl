@@ -1,6 +1,8 @@
 .about
   width 100%
   justify-content center
+  @media screen and (max-width: 600px)
+    flex-wrap wrap
 
 .row1
   display flex
@@ -24,17 +26,20 @@
     background-color white
 
 
-  @media screen and (max-width 400px)
+  @media screen and (max-width 600px)
     flex-wrap wrap
     margin 0
     &__element
-      margin 50px 0
       padding 6px 12px
+      margin 20px
+    
 .row2
   display flex
   margin-left 50px
   margin-right 50px
   background white
+  @media screen and (max-width 600px)
+    margin 0
 
 .row3
   display flex
@@ -124,7 +129,7 @@
 
 .lublin_photo
   width 100%
-  display flex
+  height auto
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
 
 .registration_packages
@@ -208,6 +213,8 @@
   width: 100%
   justify-content center
   position: relative
+  @media screen and (max-width 600px)
+    flex-wrap wrap
 
 
 
