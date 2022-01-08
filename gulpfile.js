@@ -33,7 +33,7 @@ function browsersync() {
 			baseDir: 'app/',
 			middleware: bssi({ baseDir: 'app/', ext: '.html' })
 		},
-		ghostMode: { clicks: false },
+		ghostMode: false,
 		notify: false,
 		online: true,
 		// tunnel: 'yousutename', // Attempt to use the URL https://yousutename.loca.lt

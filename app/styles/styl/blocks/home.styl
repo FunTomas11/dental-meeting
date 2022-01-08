@@ -1,0 +1,39 @@
+.home
+  width 100%
+  min-height 100vh
+  box-sizing border-box
+  background-image url("../images/dist/home.png")
+  background-repeat no-repeat
+  background-size cover
+  display flex
+  flex-direction column
+  align-items center
+  line-height 90px
+  
+.logo
+  margin-bottom -70px
+  margin-top -60px
+  height auto
+  width 100%
+  max-width 580px
+  @media screen and (max-width 600px)
+    margin 0 auto
+  
+.date
+  font-size 5rem
+  color #fff
+  @media screen and (max-width 600px)
+    font-size 3rem
+
+.description
+  font-size: 4rem
+  color accent-color
+  text-transform uppercase
+  @media screen and (max-width 600px)
+    font-size 2rem
+
+.date, .description
+  font-family accent-font
+  letter-spacing 5px
+  font-weight: 600
+  text-align center

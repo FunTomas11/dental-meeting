@@ -1,0 +1,221 @@
+.about
+  width 100%
+  justify-content center
+  @media screen and (max-width: 600px)
+    flex-wrap wrap
+
+.row1
+  display flex
+  position: relative;
+
+  &:before
+    position: absolute;
+    content ''
+    background-image url("../images/dist/background.svg")
+    background-size cover
+    width 100%
+    height: 100%
+    z-index -1
+    opacity .10
+
+  &__element
+    margin 0px 50px
+    margin-top 120px
+    margin-bottom 70px
+    padding 50px
+    background-color white
+
+
+  @media screen and (max-width 600px)
+    flex-wrap wrap
+    margin 0
+    &__element
+      padding 6px 12px
+      margin 20px
+    
+.row2
+  display flex
+  margin-left 50px
+  margin-right 50px
+  background white
+  @media screen and (max-width 600px)
+    margin 0
+
+.row3
+  display flex
+  background white
+  flex-direction column
+  margin-top 50px
+  align-items center
+
+.edsa_title
+  font-size 50px
+  font-weight bold
+  text-transform: uppercase;
+  width 100%
+  display block
+  color #1e3b00
+  margin-bottom 20px
+
+.edsa_info
+  flex 0 1 auto
+  max-width 700px
+  font-size 20px
+  color #525252
+  text-align justify
+  letter-spacing 1px
+  margin-right 50px
+  position relative
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  @media screen and (max-width 400px)
+    margin 0
+
+.edsa_border
+  max-height: 202px;
+  max-width: 331px;
+  position: absolute;
+  right: -79px;
+  top: -58px;
+  z-index: 10;
+  transform: rotate(206deg);
+
+.ptss_title
+  font-size 50px
+  font-weight bold
+  text-transform: uppercase;
+  width 100%
+  color #1e3b00
+  display block
+  margin-bottom 20px
+
+.ptss_info
+  flex 0 1 auto
+  font-size 20px
+  color #525252
+  position relative
+  text-align justify
+  letter-spacing 1px
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+
+.ptss_border
+  max-height: 202px;
+  max-width: 293px;
+  position: absolute;
+  right: -5rem;
+  bottom: -2rem;
+  transform: rotate(-23deg);
+  z-index: 10;
+
+.lublin_title
+  font-size 50px
+  font-weight bold
+  text-transform: uppercase;
+  width 100%
+  display block
+  color #1e3b00
+  margin-bottom 20px
+
+.lublin_info
+  background #F8F8F8
+  padding 50px
+  margin-top -170px
+  font-size 20px
+  color #525252
+  font-family userfont
+  text-align justify
+  letter-spacing 1px
+  margin-right 10px
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+
+.lublin_photo
+  width 100%
+  height auto
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+
+.registration_packages
+  text-align center
+  width 80%
+  color #1e3b00
+  display flex
+  flex-direction column
+  align-items center
+
+.package_title
+  font-weight bold
+  text-align center
+  color #1e3b00
+
+.package
+  text-align justify
+  color #525252
+  min-height 600px
+  min-width 400px
+  max-width 500px
+  background #F8F8F8
+  margin-left 50px
+  margin-right 50px
+  margin-top 20px
+  margin-bottom 50px
+  padding 50px
+  font-size 20px
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  font-family userfont
+  text-align center
+  position: relative;
+
+.package_b_border
+  max-height: 600px;
+  position: absolute
+  right -120px
+  top -50px
+  z-index: 10;
+
+.package_a_border
+  max-height: 600px;
+  position: absolute
+  right 280px
+  top 242px
+  z-index: 10;
+
+.price
+  font-family userfont
+  font-size 20px
+  font-size 50px
+  color #1e3b00
+
+.refund
+  background button-color
+  border-radius 10px
+  min-width 400px
+  min-height 50px
+  padding 15px
+  font-family userfont
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  margin 50px
+  font-size 20px
+  &__row
+    display flex
+    align-items center
+    justify-content center
+    flex 1 1 auto
+  &:hover
+    box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
+
+.line
+  height 2px !important
+  width 80%
+  color #525252
+  margin-bottom 70px
+
+
+.content
+  display flex
+  width: 100%
+  justify-content center
+  position: relative
+  @media screen and (max-width 600px)
+    flex-wrap wrap
+
+
+
+

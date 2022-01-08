@@ -1,14 +1,20 @@
 // USER VARIABLES SECTION
 
-accent = orange // Accent Color
+accent-color = #FF5757 // Accent Color
 fontsize = 16px // Body Font Size
 textcolor = #333 // Text Color
 lineheight = 1.65 // Document Line Height
-userfont = roboto-oh5, sans-serif // User Font Family
+userfont = 'Readex Pro', sans-serif; // User Font Family
 systemfont = -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+primary_space = 12px
+accent-font = 'Teko', sans-serif
+shadow = 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+button-color = #ebbd5b // Button color
+
 
 // IMPORT SECTION
-
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap')
 @import '../../../node_modules/bootstrap/dist/css/bootstrap-reboot.css' // Bootstrap Reboot collection
 // @import '../../../node_modules/bootstrap/dist/css/bootstrap-grid.css' // Optional Bootstrap Grid
 
@@ -51,3 +57,9 @@ body
 	min-width 320px
 	position relative
 	overflow-x hidden
+
+html, body
+	height 100%
+	width 100%
+	margin 0
+	padding 0
