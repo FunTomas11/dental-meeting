@@ -125,8 +125,8 @@ function deploy() {
 	return src('dist/')
 		.pipe(rsync({
 			root: 'dist/',
-			hostname: 'username@yousite.com',
-			destination: 'yousite/public_html/',
+			hostname: 'krainievlc@edsalublin.com',
+			destination: 'edsalublin.com/public_html/',
 			// clean: true, // Mirror copy with file deletion
 			include: [/* '*.htaccess' */], // Included files to deploy,
 			exclude: [ '**/Thumbs.db', '**/*.DS_Store' ],
