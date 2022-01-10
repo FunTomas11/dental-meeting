@@ -1,13 +1,13 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
+const menu = document.getElementById('menu');
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const menu = document.getElementById('menu');
     if (window.outerWidth < 600) {
-        mobile(menu, 'menu' ,'mobile-menu')
+        mobile(menu, 'menu', 'mobile-menu')
     }
-	// Custom JS
+    // Custom JS
 
 })
 
