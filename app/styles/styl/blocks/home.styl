@@ -1,17 +1,8 @@
 .bg-image {
-  /* The image used */
-  background-image url("../images/dist/home.png")
-  
-  
-  /* Add the blur effect */
-  //filter: blur(4px);
-  
-  /* Full height */
-  min-height: 100vh;
+  background-image url("../images/dist/home.webp")
+  min-height: calc(100vh + 37.5px)
   width 100%
   z-index -1
-  
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,34 +12,39 @@
 .home
   flex-direction column
   align-items center
+  justify-content space-between
   line-height 90px
   display flex
-  min-height 100vh
-  
+  min-height calc(100vh + 37.5px)
+  &__description
+    padding-bottom: 3rem;
+  @media screen and (max-width 600px)
+    min-height 100vh
+    
 .logo
-  margin-bottom -70px
   margin-top -60px
   height auto
   width 100%
-  max-width 580px
+  max-width 480px
   @media screen and (max-width 600px)
     margin 0 auto
   
 .date
   font-size 5rem
   color #fff
-  @media screen and (max-width 600px)
+  @media screen and (max-width 700px)
     font-size 3rem
 
 .description
   font-size: 4rem
   color accent-color
   text-transform uppercase
-  @media screen and (max-width 600px)
-    font-size 2rem
+  @media screen and (max-width 700px)
+    font-size 2.5rem
 
 .date, .description
   font-family accent-font
   letter-spacing 5px
   font-weight: 600
   text-align center
+
