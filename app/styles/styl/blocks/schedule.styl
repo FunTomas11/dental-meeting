@@ -4,23 +4,24 @@
 
 .schedule_info_meeting
   display flex
-  
+  @media screen and (max-width 1000px)
+    flex-wrap wrap
   @media screen and (max-width 600px)
     flex-wrap wrap
+    justify-content center
 
 .schedule_info
   background #F8F8F8
   padding 50px
   font-size 20px
-  letter-spacing 1px
-  font-family userfont
-  margin-right 100px
+  margin-right auto
   margin-left 50px
-  color #525252
-  text-align justify
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  @media screen and (max-width 1000px)
+    margin 20px
   @media screen and (max-width 600px)
-    margin-right 50px
+    margin 20px
+    padding 6px 12px
 
 .schedule_title
   font-size 50px
@@ -31,14 +32,30 @@
   font-family userfont
   display block
   margin-bottom 20px
+  letter-spacing 1px
   // text-shadow: 3px 3px lightgray;
+
+.schedule_img
+  width 500px
+  height 500px
+  @media screen and (max-width: 600px)
+    width 400px
+    height 400px
+  @media screen and (max-width: 400px)
+    width 300px
+    height 300px
 
 .meeting_venues
   display block
   background #F8F8F8
   padding 50px
+  margin-left 50px
   margin-right 50px
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  @media screen and (max-width 1000px)
+    margin 10px
+  @media screen and (max-width 600px)
+    padding 6px 12px
 
 .meeting_venues_title
   font-size 50px
@@ -49,12 +66,17 @@
   display block
   margin-bottom 20px
   color #1e3b00
+  @media screen and (max-width 1000px)
+    text-align center
 
 .img
   margin 5px
   border-radius 15px
-  height 375px
-  width 375px
+  height 325px
+  width 325px
+  @media screen and (max-width 600px)
+    max-width 300px
+    max-height 300px
 
 .img_link
   display grid
@@ -65,15 +87,42 @@
   margin-right 15px
   letter-spacing 1px
   color #1e3b00
+  @media screen and (max-width 1000px)
+    justify-content center
+    margin-left 50%
+    margin-right 50%
+  @media screen and (max-width 600px)
+    margin-bottom 10px
+
+.hotel_coll_title
+  max-width 325px
+  height 66px
+  display flex
+  justify-content center
+  align-items center
+
+.address_hotel_coll
+  max-width 325px
+  height 66px
+  margin-top 15px
+  display flex
+  justify-content center
+  align-items center
+  font-size 18px
 
 .meeting_venues_hotel
   display flex
-  @media screen and (max-width 600px)
+  @media screen and (max-width 1300px)
     flex-wrap wrap
+  @media screen and (max-width 1000px)
+    justify-content center
+    align-items center
 
 .workshop_row
   display flex
-  margin-top 50px
+  margin-top 10px
+  @media screen and (max-width 1000px)
+    justify-content center
 
 .workshop
   margin-left 20%
@@ -85,20 +134,34 @@
   text-align center
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
   border-radius 10px
-  @media screen and (max-width: 600px)
+  @media screen and (max-width: 1000px)
     margin-left 0
+  @media screen and (max-width: 600px)
+    margin-left 20px
+    margin-right 20px
+    letter-spacing 9px
+    font-size 70px
+  @media screen and (max-width 400px)
+    font-size 50px
+    letter-spacing 2px
 
 .workshop_text
   padding-left 25px
   color #1e3b00
+  @media screen and (max-width 600px)
+    padding 0
 
 .workshop_row :hover
   background button-color
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
+  transition 0.5s ease
+  cursor pointer
 
 .social_program_div
   display flex
   margin-bottom 50px
+  @media screen and (max-width 1000px)
+    justify-content center
 
 .social_program
   margin-left auto
@@ -111,13 +174,36 @@
   letter-spacing 13px
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
   border-radius 10px
-  @media screen and (max-width: 600px)
-    margin-right 0
+  @media screen and (max-width 1000px)
+    margin-left 20px
+    margin-right 20px
+  @media screen and (max-width 600px)
+    font-size 70px
+    letter-spacing 5px
+  @media screen and (max-width 400px)
+    font-size 50px
+    letter-spacing 2px
 
 .social_program_text
   padding-left 10px
   color #1e3b00
+  @media screen and (max-width 600px)
+    padding 0
 
 .social_program_div :hover
   background button-color
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
+  transition 0.5s ease
+  cursor pointer
+
+.sep
+  height 2px !important
+  width 80%
+  color #525252
+  margin-bottom 70px
+
+.sep_div
+  display flex
+  justify-content center
+  align-items center
+  margin-top 50px
