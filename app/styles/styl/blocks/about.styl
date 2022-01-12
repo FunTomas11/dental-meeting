@@ -40,6 +40,7 @@
   margin-left 50px
   margin-right 50px
   background white
+  flex-wrap wrap
   @media screen and (max-width 600px)
     margin 0px
 
@@ -142,6 +143,10 @@
   z-index: 10;
   transform: rotate(-23deg) scalex(-1);
 
+.text_highlight
+  color #1E3B00
+  font-weight bold
+
 .lublin_title
   font-size 50px
   font-weight bold
@@ -165,9 +170,17 @@
   letter-spacing 1px
   margin-right 10px
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  @media screen and (max-width 1400px)
+    margin-top -140px
+  @media screen and (max-width 1400px)
+    margin-top -100px
+  @media screen and (max-width 800px)
+    margin-top -70px
   @media screen and (max-width 600px)
+    margin-top -30px
     padding 25px
-    margin 20px
+    margin-left 20px
+    margin-right 20px
     font-size 17px
     letter-spacing 0px
 
@@ -175,6 +188,38 @@
   width 100%
   height auto
   box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+
+.how_to_get_here
+  background-color #A0954B
+  color white
+  font-size 25px
+  font-family userfont
+  padding 20px
+  justify-content center
+  align-items center
+  min-width 25%
+  min-height 70px
+  margin-top -65px
+  margin-left auto
+  margin-right 40px
+  margin-bottom 60px
+  border-radius 10px
+  box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
+  &:hover
+    box-shadow 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.35)
+    transition 0.5s ease
+    cursor pointer
+  @media screen and (max-width 600px)
+    min-height 35px
+    padding 12px
+    font-size 18px
+    margin-top -45px
+
+.fa-plane
+  transform rotate(300deg)
+  font-size 30px
+  @media screen and (max-width 600px)
+    font-size 20px
 
 .registration_packages
   text-align center
