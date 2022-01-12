@@ -6,11 +6,10 @@
   display flex
   @media screen and (max-width 1000px)
     flex-wrap wrap
-  @media screen and (max-width 600px)
-    flex-wrap wrap
     justify-content center
 
 .schedule_info
+  position relative
   background #F8F8F8
   padding 50px
   font-size 20px
@@ -22,6 +21,15 @@
   @media screen and (max-width 600px)
     margin 20px
     padding 6px 12px
+  .zoom-image
+    position absolute
+    font-size 100px
+    top 50%
+    left 45%
+    color white
+    display none
+    pointer-events none
+    z-index 20
 
 .schedule_title
   font-size 50px
@@ -33,12 +41,19 @@
   display block
   margin-bottom 20px
   letter-spacing 1px
-  // text-shadow: 3px 3px lightgray;
+  @media screen and (max-width 600px)
+    font-size 34px
+    text-align center
+
+.fa-file-download
+  color #1e3b00
 
 .schedule_img
-  width 500px
+  width 700px
   height 500px
-  @media screen and (max-width: 600px)
+  &:hover
+    filter grayscale(70%) contrast(60%)
+  @media screen and (max-width: 1600px)
     width 400px
     height 400px
   @media screen and (max-width: 400px)
@@ -68,6 +83,8 @@
   color #1e3b00
   @media screen and (max-width 1000px)
     text-align center
+  @media screen and (max-width 600px)
+    font-size 34px
 
 .img
   margin 5px
@@ -109,7 +126,8 @@
   justify-content center
   align-items center
   font-size 18px
-
+  @media screen and (max-width 600px)
+    margin-top 2px
 .meeting_venues_hotel
   display flex
   @media screen and (max-width 1300px)
