@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         loopa.style.display = 'none';
     });
     document.getElementById('schedule-image').addEventListener('mouseover', event => {
-        loopa.style.display = 'block';
+        setTimeout(() => {
+            loopa.style.display = 'block';
+        }, 150)
     });
 
 })
