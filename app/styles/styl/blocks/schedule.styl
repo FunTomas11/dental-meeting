@@ -30,6 +30,12 @@
     display none
     pointer-events none
     z-index 20
+    @media screen and (max-width 1600px)
+      top 44%
+      left 44%
+    @media screen and (max-width 1000px)
+      left 43%
+      top 50%
 
 .schedule_title
   font-size 50px
@@ -52,7 +58,8 @@
   width 700px
   height 500px
   &:hover
-    filter grayscale(70%) contrast(60%)
+    filter blur(4px)
+    transition 0.5s ease
   @media screen and (max-width: 1600px)
     width 400px
     height 400px
@@ -104,6 +111,9 @@
   margin-right 15px
   letter-spacing 1px
   color #1e3b00
+  &:first-child
+    @media screen and (max-width 1000px)
+      margin-bottom 25px
   @media screen and (max-width 1000px)
     justify-content center
     margin-left 50%
