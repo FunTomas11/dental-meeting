@@ -1,6 +1,10 @@
 <div class="bg-image"></div>
 <section class="home" id="home">
-    <img srcset="images/dist/logo.webp, images/dist/jpg/logo.png" alt="EDSA logo" class="logo home__element">
+    <picture>
+        <source srcset="images/dist/logo.webp" type="image/webp">
+        <source srcset="images/dist/jpg/logo.png" type="image/png">
+        <img src="images/dist/jpg/logo.png" alt="EDSA logo" class="logo home__element">
+    </picture>
     <div class="home__description">
         <h2 class="date">18-23.04.2022</h2>
         <h2 class="description">69th edsa meeting lublin 2022</h2>
