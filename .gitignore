@@ -1,7 +1,0 @@
-# Project exclude paths
-/node_modules/
-/.idea/
-/app/images/dist/
-/app/css/
-/app/**/*.min.js
-/package-lock.json
