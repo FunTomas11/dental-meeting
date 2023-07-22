@@ -95,9 +95,9 @@ function styles() {
 
 function images() {
 	return src(['app/images/src/**/*'])
-		.pipe(changed('app/images/dist'))
+		.pipe(changed('app/images/docs'))
 		.pipe(imagemin())
-		.pipe(dest('app/images/dist'))
+		.pipe(dest('app/images/docs'))
 		.pipe(browserSync.stream())
 }
 
@@ -108,23 +108,23 @@ function buildcopy() {
 		'!app/images/src/**/*',
 		'app/fonts/**/*'
 	], { base: 'app/' })
-	.pipe(dest('dist'))
+	.pipe(dest('docs'))
 }
 
 async function buildhtml() {
-	let includes = new ssi('app/', 'dist/', '/**/*.html')
+	let includes = new ssi('app/', 'docs/', '/**/*.html')
 	includes.compile()
-	del('dist/parts', { force: true })
+	del('docs/parts', { force: true })
 }
 
 async function cleandist() {
-	del('dist/**/*', { force: true })
+	del('docs/**/*', { force: true })
 }
 
 function deploy() {
-	return src('dist/')
+	return src('docs/')
 		.pipe(rsync({
-			root: 'dist/',
+			root: 'docs/',
 			hostname: 'krainievlc@edsalublin.com',
 			destination: 'edsalublin.com/public_html/',
 			// clean: true, // Mirror copy with file deletion
